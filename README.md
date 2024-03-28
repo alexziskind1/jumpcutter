@@ -23,3 +23,10 @@ recommended this to me. However, my pyinstaller build did not work. :( HELP
 
 ## Building with nix
 `nix-build` to get a script with all the libraries and ffmpeg, `nix-build -A bundle` to get a single binary.
+
+## SFX Extractor
+Use the sfx_extrator branch to extract sound effects from a long video file (mp4)
+Here is the usage:
+```
+python jumpcutter.py --silent_threshold 0.001 --frame_rate 30 --output_file_base /Users/alex/Code/sfx_extrator/project_root/original_video/ --input_file /Users/alex/Code/sfx_extrator/project_root/original_video/input.mp4
+```
